@@ -1,0 +1,21 @@
+
+  /* ---------- Правка прямо на странице ---------- */
+  .edit{display:flex; align-items:center; gap:10px; margin-left:auto}
+  .editbtn, .savebtn{
+    font-family:"Inter", system-ui, sans-serif; font-size:13px; font-weight:600;
+    cursor:pointer; padding:7px 15px; border-radius:100px;
+    transition:background .15s, color .15s, border-color .15s;
+  }
+  .editbtn{border:1px solid var(--rule); background:var(--paper); color:var(--ink-soft)}
+  .editbtn:hover{color:var(--moss-deep); border-color:var(--moss)}
+  .editbtn[aria-pressed="true"]{background:var(--moss-deep); color:#f2f7e6; border-color:var(--moss-deep)}
+  .savebtn{border:1px solid var(--add-line); background:var(--add); color:var(--moss-deep)}
+  .savebtn:hover{background:var(--pistachio-deep)}
+  .savebtn:disabled{opacity:.5; cursor:default}
+  .editstate{font-family:"Inter", system-ui, sans-serif; font-size:12.5px; color:var(--ink-faint)}
+  .editbtn:focus-visible, .savebtn:focus-visible{outline:2px solid var(--moss-deep); outline-offset:2px}
+  body.editing [contenteditable]{outline:1px dashed var(--rule); outline-offset:5px; border-radius:3px}
+  body.editing [contenteditable]:focus{outline:2px solid var(--moss); background:var(--paper)}
+  @media (max-width:620px){
+    .edit{margin-left:0}
+  }

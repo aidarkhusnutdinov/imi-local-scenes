@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Памятка модератора — «Как развивать сцену в регионах», ИМИ.Конференция 2026</title>
+<meta name="description" content="Рабочая памятка модератора дискуссии «Как развивать музыкальную сцену в регионах», ИМИ.Конференция 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pistachio:#e7efd6; --pistachio-deep:#d8e4bf; --paper:#fbfcf5;
+    --ink:#2c3a24; --ink-soft:#5b6b4e; --ink-faint:#86937a;
+    --moss:#6f8a4a; --moss-deep:#4a6330; --rule:#cbd9b0;
+    --add:#e9f4dc; --add-line:#7fa84e;
+    --del:#fbe7e4; --del-line:#c46b5c;
+    --shadow:0 1px 2px rgba(58,74,42,.05), 0 8px 28px -12px rgba(58,74,42,.22);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1100px 620px at 12% -8%, #f2f7e6 0%, rgba(242,247,230,0) 62%),
+      radial-gradient(900px 560px at 92% 4%, #dfebc9 0%, rgba(223,235,201,0) 58%),
+      var(--pistachio);
+    background-attachment:fixed;
+    color:var(--ink);
+    font-family:"Literata", Georgia, "Times New Roman", serif;
+    font-size:17.5px; line-height:1.72; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:800px; margin:0 auto; padding:0 24px 96px}
+
+  /* ---------- Шапка ---------- */
+  header.hero{padding:52px 0 8px}
+  h1{font-size:clamp(27px,4.6vw,40px); line-height:1.12; font-weight:600; letter-spacing:-.02em; margin:0 0 18px; text-wrap:balance}
+  .lede{font-size:19px; color:var(--ink-soft); margin:0 0 26px; max-width:36em}
+  .meta{display:flex; flex-wrap:wrap; gap:10px; font-family:"Inter",system-ui,sans-serif; font-size:13px; font-weight:500; padding-bottom:34px; border-bottom:1px solid var(--rule)}
+  .meta span{background:var(--paper); border:1px solid var(--rule); color:var(--ink-soft); padding:6px 13px; border-radius:100px}
+  .meta span b{color:var(--moss-deep); font-weight:600}
+
+  /* ---------- Блоки ---------- */
+  section.block{margin-top:52px; scroll-margin-top:70px}
+  .head{display:flex; align-items:flex-start; gap:18px; margin-bottom:8px}
+  .num{
+    flex:none; width:44px; height:44px; margin-top:2px; display:grid; place-items:center;
+    border-radius:50%; background:var(--moss-deep); color:#f2f7e6;
+    font-family:"Inter",system-ui,sans-serif; font-weight:600; font-size:17px;
+  }
+  .head h2{margin:0; font-size:clamp(21px,3.2vw,26px); line-height:1.3; font-weight:600; letter-spacing:-.01em; text-wrap:balance}
+  .body{background:var(--paper); border:1px solid var(--rule); border-radius:14px; box-shadow:var(--shadow); padding:28px 32px; margin-top:18px}
+  .body > :first-child{margin-top:0}
+  .body > :last-child{margin-bottom:0}
+  .body p{margin:0 0 1.1em}
+  .body strong{font-weight:600; color:var(--moss-deep)}
+  .body ul{margin:0 0 1.1em; padding-left:1.15em}
+  .body li{margin-bottom:.45em}
+  .body blockquote{
+    margin:0 0 1.1em; padding:15px 20px; border-left:3px solid var(--moss);
+    background:#f3f7e9; border-radius:0 10px 10px 0; font-size:18px; color:var(--ink);
+  }
+  .body blockquote::before{
+    content:"Вопрос"; display:block; font-family:"Inter",system-ui,sans-serif;
+    font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--moss); margin-bottom:5px;
+  }
+
+  footer{margin-top:72px; padding-top:26px; border-top:1px solid var(--rule); font-family:"Inter",system-ui,sans-serif; font-size:13px; color:var(--ink-faint); display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px}
+  .totop{color:var(--moss); text-decoration:none}
+  .totop:hover{text-decoration:underline}
+
+  @media (max-width:620px){
+    body{font-size:16.5px}
+    .wrap{padding:0 18px 64px}
+    .body{padding:20px 18px; border-radius:12px}
+    .num{width:36px; height:36px; font-size:15px}
+    .head{gap:12px}
+  }
+  @media print{
+    body{background:#fff}.body{box-shadow:none}
+    section.block{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>Памятка модератора — «Как развивать музыкальную сцену в регионах»</h1>
+  <p class="lede">ИМИ.Конференция 2026, 11 сентября, 15:20–16:15, «Баунс».</p>
+  <div class="meta">
+    <span><b>55</b> минут</span>
+    <span><b>5</b> блоков + финал</span>
+    <span><b>4</b> спикера</span>
+  </div>
+</header>
+
+<section class="block" id="s1">
+  <div class="head"><div class="num">1</div><div><h2>Вступление</h2></div></div>
+  <div class="body">
+  <p>Добрый день! Меня зовут Айдар Хуснутдинов, я из Казани, сооснователь телеграм-канала и лейбла
+  «Казанализация» и музыкант My Friend Aidar.&nbsp;</p>
+<p>Тема нашей дискуссии — как развивать музыкальную сцену в регионах. Участники:</p>
+<ul>
+<li><strong>Борис Елатомцев</strong> — сооснователь агентства «JBC Promotion» и ивент-холла «Сигнал»
+в Самаре</li>
+<li><strong>Тёма Клмоу</strong> — участник дуэта «Два обреза» и основатель лейбла Shabash
+Records</li>
+<li><strong>Сюзанна Иванова</strong> — продюсер музыкальной лаборатории M'uzlab, фестиваля
+«Музсходка»</li>
+<li><strong>Александр Алькаев</strong> — основатель студии-лейбла HI-REAL в Саратове</li></ul></div>
+</section>
+<section class="block" id="s2">
+  <div class="head">
+  <div class="num">2</div>
+  <div>
+  <h2>Блок 1. Что такое музыкальная сцена. Чем она отличается от просто совокупности
+  музыкантов</h2></div></div>
+  <div class="body">
+  <p><strong>Подводка.</strong> Музыкальная сцена — это не просто набор артистов, которые физически
+  находятся в одном регионе. Они все так или иначе связаны между собой. Сцена состоит из кластеров,
+  группировок артистов, которые не только похожи стилистически и играют вместе, но и дружат, общаются,
+  устраивают общие концерты. Между кластерами тоже есть горизонтальные связи. Благодаря этому сцена
+  втягивает в себя сначала ближний, а потом и дальний круг, и вокруг неё появляется какая-то
+  экономика.</p>
+<p><strong>Пример на минуту.</strong> В Казани в двухтысячные объединение «как?так» давало концерты
+просто в бане, потом перебралось в маленькие кафе, потом в клубы побольше — и из этого вырос клуб
+«Соль», который знают по всей России. Тёма недавно выступал с «Двумя обрезами» на большом фестивале,
+который организовала «Соль», и там же играл дружеский проект Размаха.</p>
+<blockquote>Есть ли у вас живые и, желательно, с цифрами примеры того, как отдельные музыканты
+объединились в живую и активную сцену — и что этому помогло?</blockquote>
+<p>Формулировка ИМИ, если понадобится: «Что помогло отдельным музыкантам и проектам в вашем городе
+объединиться в регулярно работающую сцену?»</p></div>
+</section>
+<section class="block" id="s3">
+  <div class="head">
+  <div class="num">3</div>
+  <div>
+  <h2>Блок 2. Экономика маленьких концертов. Как она устроена и как превратить её в точку
+  роста</h2></div></div>
+  <div class="body">
+  <p><strong>Подводка.</strong> Прежде, чем вокруг сцены вырастет экономика, которая может поддерживать саму себя и их, музыкантам придется сыграть, а организаторам провести десятки и сотни маленьких концертов. Билеты на маленькие концерты недорогие, публики там
+  десятки человек, а не сотни, и при этом есть расходы на оборудование, рекламу и аренду.</p>
+<blockquote>Начинаем с Бориса и разбираем конкретное небольшое событие: доходы, расходы,
+кто получает оплату, кто несёт риск и что позволяет проводить его регулярно.</blockquote>
+<p>Затем Тёма дополняет со стороны артиста.</p>
+<blockquote>Как группам жить и поддерживать себя и локальную сцену на плаву — устроиться на работу и
+потерпеть, занимаясь музыкой в свободное время? Или есть какие-то другие советы?</blockquote>
+<p>Вопрос к Сюзанне и Александру:</p>
+<blockquote>Что после лаборатории или фестиваля и кто продолжает работать с участниками?<br>Вот появился молодой музыкант, вроде того, к котором рассказывал Тёма, он на энтузиазме отыграл на фестивалях, поучаствовал в лабораториях, даже получил какие-то деньги. А к чему именно он или она мог бы стремиться, чтобы реалистично в рамках существующей и развивающейся локальной сцены превратить свое занятие в постоянную профессию? Предлагаю пока не говорить о масштабном выходе за пределы региона, у нас этому посвящен отдельный блок.</blockquote></div>
+</section>
+<section class="block" id="s4">
+  <div class="head">
+  <div class="num">4</div>
+  <div>
+  <h2>Блок 3. Другие особенности и перспективы экономики локальных сцен. Взаимодействие с городскими и
+  региональными властями и бизнесом</h2></div></div>
+  <div class="body">
+  <p><strong>Подводка.</strong> Представим пример какой-то растущей, относительно успешной локальной
+  сцены, где есть, допустим, два-три-четыре артиста, каждый из которых может собрать 100–200–300
+  человек по билетам. И вокруг которых ещё и появляются новые интересные артисты, которые видят успех
+  и тянутся за ним. Также есть какой-то мощный человек с организаторскими способностями, который
+  обладает, во-первых, видением, во-вторых, может всё это собрать вокруг себя. Вы уже настолько
+  большие, что с вами хотят разговаривать.</p>
+<blockquote>Какие для развития, для заработка денег и для роста есть возможности? Гранты, городские
+фестивали, корпоративы, что-то ещё?</blockquote>
+<blockquote>Давайте попробуем разобрать конкретную поддержку: кто дал деньги, помещение,
+оборудование или другие ресурсы, на каких условиях и что продолжило работать после завершения
+проекта, если такой кейс был.</blockquote></div>
+</section>
+<section class="block" id="s5">
+  <div class="head">
+  <div class="num">5</div>
+  <div>
+  <h2>Блок 4. Проблемы и ограничения местной сцены: площадки, публика, СМИ</h2></div></div>
+  <div class="body">
+  <p><strong>Подводка.</strong> У нас в регионе есть татарская эстрада — больше тысячи артистов,
+  несколько своих телеканалов и радиостанций, свой большой лейбл, свои концертные площадки, гастроли
+  по всему региону. Это пример локальной музыкальной индустрии с готовой инфраструктурой. У маленькой
+  независимой сцены ничего этого нет: вот вы выпустили релиз — и дальше непонятно, что делать.</p>
+<blockquote>Как привлечь на местную музыку людей за пределами круга друзей? Что у вас сработало, а
+что нет?</blockquote></div>
+</section>
+<section class="block" id="s6">
+  <div class="head">
+  <div class="num">6</div>
+  <div>
+  <h2>Блок 5. Взаимодействие между региональными сценами</h2></div></div>
+  <div class="body">
+  <p><strong>Подводка.</strong> Любая интересная, яркая, самобытная музыкальная сцена со своим
+  видением в конце концов начинает проводить какую-то экспансию — сначала в соседние регионы, потом в
+  столицы.</p>
+<blockquote>Что нужно делать местным организаторам и местным артистам, чтобы быть услышанными за пределами региона? Что им стоит держать в голове как перспективу и о чём, может
+быть, им имеет смысл задумываться прямо сейчас, даже на первых шагах?</blockquote>
+<blockquote>Как выстраивать обмен между городами — концерты, совместные релизы, продвижение — и что
+это даёт местной сцене?</blockquote></div>
+</section>
+<section class="block" id="s7">
+  <div class="head"><div class="num">7</div><div><h2>Финальный вопрос ко всем</h2></div></div>
+  <div class="body"><blockquote>Один приоритетный шаг для развития своей сцены на ближайший
+  год.</blockquote></div>
+</section>
+<section class="block" id="s8">
+  <div class="head"><div class="num">8</div><div><h2>Вопросы из зала</h2></div></div>
+  <div class="body">
+  <p>10 минут по документу ИМИ, 8 минут по письму Полины. За 10 минут до конца Полина даст сигнал в
+  наушник. Если разговор идёт активно, можно отдать залу меньше — это моё решение. В конце
+  поблагодарить участников и зрителей.</p></div>
+</section>
+<section class="block" id="s9">
+  <div class="head">
+  <div class="num">9</div>
+  <div>
+  <h2>Если беседа провисла — запасные вопросы из памятки</h2></div></div>
+  <div class="body">
+  <ul>
+  <li>Что изменилось в музыкальной индустрии за пять лет?</li>
+  <li>Чего российской индустрии не хватает — можно в сравнении с западными практиками?</li>
+  <li>Назовите главные проблемы музыкальной индустрии в России.</li>
+  <li>Чему должен учиться музыкант? Насколько важен образ артиста и стратегия его развития?</li>
+  <li>На что обратить внимание при продвижении собственного творчества?</li>
+  <li>Что посоветуете музыкантам при выстраивании коммуникации с коллегами из
+  индустрии?</li></ul></div>
+</section>
+<section class="block" id="s10">
+  <div class="head"><div class="num">10</div><div><h2>Организационное</h2></div></div>
+  <div class="body">
+  <p>Ударение: ИМ<strong>И́</strong>. Наушник — Полина, в зале экран с таймером. Ева Урываева,
+  спикер-менеджер на площадке: +7-991-683-88-63. Не материться, не упоминать алкоголь и наркотики.
+  Одежда однотонная, без мелкого рисунка, без мерча ИМИ.</p></div>
+</section>
+<footer>
+  <span>Айдар Хуснутдинов · ИМИ.Конференция 2026</span>
+  <a class="totop" href="#">Наверх</a>
+</footer>
+</div>
+</body>
+</html>
