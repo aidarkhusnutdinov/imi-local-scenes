@@ -43,7 +43,7 @@
     c.querySelectorAll("details.old").forEach(function(d){ d.removeAttribute("open"); });
     var x;
     if ((x = c.querySelector("#edit")))      x.setAttribute("hidden", "");
-    if ((x = c.querySelector("#savebtn")))   x.setAttribute("hidden", "");
+    if ((x = c.querySelector("#savebtn"))){ x.setAttribute("hidden", ""); x.removeAttribute("disabled"); }
     if ((x = c.querySelector("#editbtn")))   x.setAttribute("aria-pressed", "false");
     if ((x = c.querySelector("#editstate"))) x.textContent = "";
     return "<!DOCTYPE html>\n" + c.outerHTML;
@@ -68,6 +68,7 @@
     }).then(function(){ savebtn.disabled = false; });
   }
 
+  savebtn.disabled = false;
   editbtn.addEventListener("click", function(){ setEditing(!editing); });
   savebtn.addEventListener("click", save);
 
